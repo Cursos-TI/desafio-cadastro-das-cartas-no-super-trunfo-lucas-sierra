@@ -6,7 +6,7 @@
 int main() {
     int turistico_1;
     unsigned long int populacao_1;
-    float PIB_1, area_1, PIBPercapita_1, densidade_1;
+    float PIB_1, area_1, PIBPercapita_1, densidade_1, SuperPoder_1;
     char estado_1 [3], carta_1 [4], cidade_1 [50];
 
 //Término da váriável 1
@@ -14,7 +14,7 @@ int main() {
 
     int turistico_2;
     unsigned long int populacao_2;
-    float PIB_2, area_2, PIBPercapita_2, densidade_2;
+    float PIB_2, area_2, PIBPercapita_2, densidade_2, SuperPoder_2;
     char estado_2 [3], carta_2 [4], cidade_2 [50];
 
 //Término da váriável 2
@@ -43,6 +43,7 @@ int main() {
 
     densidade_1 = (float)(populacao_1 / area_1);
     PIBPercapita_1 = (float)(PIB_1 / populacao_1);
+    SuperPoder_1 = (float)(populacao_1 + area_1 + PIB_1 + turistico_1 + PIBPercapita_1 + densidade_1);
 
 //Término informações carata variável 1
 //Início visualização da carta 1
@@ -83,6 +84,7 @@ int main() {
 
     densidade_2 = (float)(populacao_2 / area_2);
     PIBPercapita_2 = (float)(PIB_2 / populacao_2);
+    SuperPoder_2 = (float)(populacao_2 + area_2 + PIB_2 + turistico_2 + PIBPercapita_2 + densidade_2);
 
 //Término informações carta variável 2
 //Início visualização da carta 2
@@ -98,5 +100,18 @@ int main() {
     printf("O PIB per Capita é: %f\n\n", PIBPercapita_2);
 
 //Término visualização da carta 2
+
+//Comparação dos atributos
+printf("Comparação dos atributos carta A e carta B \n\n");
+printf("População: %d\n", populacao_1 > populacao_2);
+printf("Área: %d\n", area_1 > area_2);
+printf("PIB: %d\n", PIB_1 > PIB_2);
+printf("Pontos Turísticos: %d\n", turistico_1 > turistico_2);
+printf("Densidade Populacional: %d", densidade_1 < densidade_2);
+printf("PIB per capita: %d\n", PIBPercapita_1 > PIBPercapita_2);
+printf("Super Poder: %d\n", SuperPoder_1 > SuperPoder_2);
+
+//Término da comparação dos atributos
+
     return 0;
 }
