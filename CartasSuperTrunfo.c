@@ -107,7 +107,7 @@ printf("População: %d\n", populacao_1 > populacao_2);
 printf("Área: %d\n", area_1 > area_2);
 printf("PIB: %d\n", PIB_1 > PIB_2);
 printf("Pontos Turísticos: %d\n", turistico_1 > turistico_2);
-printf("Densidade Populacional: %d", densidade_1 < densidade_2);
+printf("Densidade Populacional: %d\n", densidade_1 < densidade_2);
 printf("PIB per capita: %d\n", PIBPercapita_1 > PIBPercapita_2);
 printf("Super Poder: %d\n", SuperPoder_1 > SuperPoder_2);
 
